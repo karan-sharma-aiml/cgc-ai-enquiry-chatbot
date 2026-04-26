@@ -1,0 +1,52 @@
+[
+  {"question": "bca fees kya hai", "answer": "BCA ki fees ₹50,000 per year hai"},
+  {"question": "btech fees kya hai", "answer": "B.Tech ki fees ₹80,000 per year hai"},
+  {"question": "bba fees kya hai", "answer": "BBA ki fees ₹60,000 per year hai"},
+  {"question": "mca fees kya hai", "answer": "MCA ki fees ₹70,000 per year hai"},
+  {"question": "mba fees kya hai", "answer": "MBA ki fees ₹90,000 per year hai"},
+
+  {"question": "admission kab start hote hai", "answer": "Admission June se start hote hain"},
+  {"question": "admission process kya hai", "answer": "Admission online form fill karke aur documents verify karke hota hai"},
+  {"question": "eligibility kya hai bca ke liye", "answer": "BCA ke liye 12th pass hona zaroori hai"},
+  {"question": "eligibility kya hai btech ke liye", "answer": "B.Tech ke liye PCM ke saath 12th pass hona zaroori hai"},
+
+  {"question": "courses kaun kaun se hai", "answer": "College me BCA, BBA, B.Tech, MCA, MBA courses available hain"},
+  {"question": "bca duration kya hai", "answer": "BCA course 3 saal ka hota hai"},
+  {"question": "btech duration kya hai", "answer": "B.Tech course 4 saal ka hota hai"},
+  {"question": "mba duration kya hai", "answer": "MBA course 2 saal ka hota hai"},
+
+  {"question": "hostel facility hai kya", "answer": "Haan, boys aur girls dono ke liye hostel available hai"},
+  {"question": "hostel fees kitni hai", "answer": "Hostel fees ₹30,000 per year hai"},
+  {"question": "mess facility hai kya", "answer": "Haan, mess facility available hai"},
+
+  {"question": "placement hota hai kya", "answer": "Haan, college me placement support diya jata hai"},
+  {"question": "average package kitna hai", "answer": "Average package ₹3-5 LPA hota hai"},
+  {"question": "top recruiters kaun hai", "answer": "TCS, Infosys, Wipro jaise companies visit karti hain"},
+
+  {"question": "library hai kya", "answer": "Haan, well-equipped library available hai"},
+  {"question": "sports facilities hai kya", "answer": "Haan, indoor aur outdoor sports facilities available hain"},
+  {"question": "wifi hai kya", "answer": "Haan, campus me free WiFi available hai"},
+
+  {"question": "contact number kya hai", "answer": "Contact number: 9876543210"},
+  {"question": "email kya hai", "answer": "Email: info@college.com"},
+  {"question": "college kaha hai", "answer": "College Punjab me located hai"},
+
+  {"question": "scholarship milti hai kya", "answer": "Haan, meritorious students ke liye scholarship available hai"},
+  {"question": "loan facility hai kya", "answer": "Haan, education loan assistance available hai"},
+
+  {"question": "attendance rule kya hai", "answer": "Minimum 75% attendance required hai"},
+  {"question": "exam kab hote hai", "answer": "Semester exams December aur May me hote hain"},
+  {"question": "result kab aata hai", "answer": "Result exams ke 1-2 mahine baad aata hai"},
+
+  {"question": "uniform compulsory hai kya", "answer": "Haan, kuch courses ke liye uniform compulsory hai"},
+  {"question": "ragging allowed hai kya", "answer": "Nahi, ragging strictly prohibited hai"},
+
+  {"question": "transport facility hai kya", "answer": "Haan, bus facility available hai"},
+  {"question": "bus fees kitni hai", "answer": "Bus fees ₹20,000 per year hai"},
+
+  {"question": "internship milti hai kya", "answer": "Haan, internship opportunities available hain"},
+  {"question": "faculty kaisi hai", "answer": "Faculty experienced aur supportive hai"},
+
+  {"question": "campus kaisa hai", "answer": "Campus modern aur well-maintained hai"},
+  {"question": "events hote hai kya", "answer": "Haan, college me cultural aur technical events hote hain"}
+]

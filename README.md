@@ -1,24 +1,38 @@
+# 🎓 AI College Enquiry Chatbot
+
+An intelligent AI-powered chatbot designed to automate college enquiry systems. It leverages **NLP, embeddings, and Retrieval-Augmented Generation (RAG)** to deliver accurate and context-aware responses for student queries.
 
 ---
 
-# 📄 🚀 `README.md` (FULL PROFESSIONAL)
+## 🚀 Live Demo
 
-```md id="readme_pro_01"
-# 🎓 AI College Enquiry Chatbot
+👉 Run locally:  
+http://127.0.0.1:8001/app
 
-An AI-powered chatbot designed to handle college-related queries such as admissions, fees, courses, and facilities. The system uses NLP, embeddings, and semantic search to provide accurate and intelligent responses.
+---
+
+## 📸 Project Screenshots
+
+### 💬 Chatbot Conversation
+![Chatbot](Screenshot/chatbot-response-demo.png)
+
+---
+
+### ⚙️ Backend API (FastAPI)
+![Backend](Screenshot/fastapi-chat-endpoint.png)
 
 ---
 
 ## 🚀 Features
 
-- 🤖 AI-based chatbot for student queries
+- 🤖 AI-powered chatbot for student queries
 - 🧠 NLP preprocessing for better understanding
-- 🔍 Embedding-based semantic search (RAG approach)
+- 🔍 Semantic search using embeddings (RAG)
 - 💬 Real-time chat interface (Frontend + Backend)
-- 🧾 Memory support for conversation history
-- 🌐 FastAPI backend with REST API
-- 🎨 Modern responsive UI with glassmorphism design
+- 🧾 Conversation memory handling
+- ⚡ FastAPI-based high-performance backend
+- 🎨 Modern responsive UI (Glassmorphism design)
+- 📦 Cached embeddings for faster responses
 
 ---
 
@@ -27,7 +41,7 @@ An AI-powered chatbot designed to handle college-related queries such as admissi
 ### 🔹 Backend
 - Python
 - FastAPI
-- Sentence Transformers (Embeddings)
+- Sentence Transformers
 - Scikit-learn (Cosine Similarity)
 
 ### 🔹 Frontend
@@ -36,186 +50,130 @@ An AI-powered chatbot designed to handle college-related queries such as admissi
 - JavaScript (Fetch API)
 
 ### 🔹 AI Concepts
-- NLP preprocessing
+- Natural Language Processing (NLP)
 - Embeddings
-- Vector Search
+- Vector Similarity Search
 - Retrieval-Augmented Generation (RAG)
 
 ---
 
 ## 📂 Project Structure
-
-```
-
 ai_project/
 │
-├── backend/
-│   ├── main.py           # FastAPI entry point
-│   ├── nlp.py            # Text preprocessing
-│   ├── search.py         # Semantic search logic
-│   ├── embedding.py      # Embedding generation
-│   ├── llm.py            # Response generation
-│   ├── memory.py         # Chat history storage
+├── Backend/
+│ ├── main.py
+│ ├── nlp.py
+│ ├── search.py
+│ ├── embedding.py
+│ ├── llm.py
+│ ├── memory.py
 │
-├── frontend/
-│   ├── index.html        # UI structure
-│   ├── style.css         # Styling (modern UI)
-│   ├── script.js         # API communication
-│   ├── cgc.jpg           # Background image
+├── Frontend/
+│ ├── index.html
+│ ├── style.css
+│ ├── script.js
+│ ├── cgc.jpg
 │
-├── data/
-│   ├── faq.json          # Knowledge base
-│   ├── embeddings.pkl    # Cached embeddings
+├── Data/
+│ ├── faq.json
+│ ├── embeddings.pkl
+│
+├── Screenshot/
+│ ├── chatbot-response-demo.png
+│ ├── fastapi-chat-endpoint.png
 │
 ├── tests/
-│   ├── test_chatbot.py   # Automated testing
+│ ├── test_chatbot.py
 │
-├── requirements.txt      # Dependencies
-├── .gitignore            # Ignored files
-└── README.md             # Project documentation
+├── requirements.txt
+├── .gitignore
+└── README.md
 
-```
 
 ---
 
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone Repository
-```
-
-git clone [https://github.com/karan-sharma-aiml/cgc-ai-enquiry-chatbot.git](https://github.com/karan-sharma-aiml/cgc-ai-enquiry-chatbot.git)
+```bash
+git clone https://github.com/karan-sharma-aiml/cgc-ai-enquiry-chatbot.git
 cd cgc-ai-enquiry-chatbot
 
-```
-
----
-
-### 2️⃣ Create Virtual Environment
-```
-
+2️⃣ Create Virtual Environment
 python -m venv venv
 venv\Scripts\activate
 
-```
-
----
-
-### 3️⃣ Install Dependencies
-```
-
+3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-```
-
----
-
-### 4️⃣ Run Backend Server
-```
-
-cd backend
+4️⃣ Run Backend Server
+cd Backend
 python -m uvicorn main:app --reload --port 8001
 
-```
-
----
-
-### 5️⃣ Open Application
-
+5️⃣ Open Application
 👉 Open in browser:
-```
+http://127.0.0.1:8001/app
 
-[http://127.0.0.1:8001/app](http://127.0.0.1:8001/app)
-
-```
-
----
-
-## 🧪 Testing
-
-Run automated test cases:
-
-```
-
-python tests/test_chatbot.py
-
-```
-
-👉 Output includes:
-- Response validation
-- Accuracy calculation
-
----
-
-## 🔄 Working Flow
-
-```
-
+🔄 Working Flow
 User Input
-↓
+   ↓
 Frontend (HTML/CSS/JS)
-↓
-FastAPI Backend
-↓
+   ↓
+FastAPI Backend (API)
+   ↓
 NLP Preprocessing
-↓
+   ↓
 Embedding Generation
-↓
+   ↓
 Vector Search (Cosine Similarity)
-↓
+   ↓
 Response Generation
-↓
+   ↓
 Frontend Display
 
-```
+🧠 Key Concept: RAG
+This project implements Retrieval-Augmented Generation (RAG):
 
----
+2006Retrieves relevant answers using vector similarity
+Enhances responses using AI logic
+Provides more accurate results than keyword-based systems
 
-## 🧠 Key Concept (RAG)
+🎯 Use Cases
+🎓 College enquiry automation
+💬 Student support chatbot
+🏫 Educational institution websites
+📞 AI-based helpdesk systems
 
-This project uses a **Retrieval-Augmented Generation (RAG)** approach:
+🔐 Notes
+.env and venv/ are excluded via .gitignore
+Embeddings are cached (embeddings.pkl) for performance optimization
 
-- Retrieves relevant answers using vector search
-- Enhances responses using AI logic
-- Improves accuracy over keyword-based systems
+🚀 Future Improvements
+🌍 Multi-language support (Hindi/Punjabi)
+🎙️ Voice-based chatbot
+📊 Admin dashboard
+🤖 Advanced LLM integration (GPT)
+🔄 Working Flow
 
----
+👨‍💻 Author
 
-## 🎯 Use Cases
+Karan Sharma
+🔗 GitHub: https://github.com/karan-sharma-aiml
 
-- 🎓 College enquiry systems
-- 💬 Student support chatbot
-- 🏫 Educational websites
-- 📞 Automated helpdesk
+⭐ Support
 
----
+If you like this project:
 
-## 🔐 Notes
+⭐ Star this repository
+🔁 Share with others
+💬 Give feedback
 
-- `.env` and `venv/` are excluded using `.gitignore`
-- Embeddings are cached for faster performance
+💡 Final Note
 
----
+This project demonstrates a real-world AI system combining:
 
-## 🚀 Future Improvements
+NLP
+RAG Architecture
+Full-stack development
 
-- 🌍 Multi-language support
-- 🎙️ Voice-based chatbot
-- 📊 Admin dashboard
-- 🤖 Advanced LLM integration
-
----
-
-## 👨‍💻 Author
-
-**Karan Sharma**  
-GitHub: https://github.com/karan-sharma-aiml
-
----
-
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub and share it 🚀
-```
-
----
-
+👉 making it suitable for college projects, portfolios, and real deployments 🚀

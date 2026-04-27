@@ -58,6 +58,7 @@ http://127.0.0.1:8001/app
 ---
 
 ## 📂 Project Structure
+---
 ai_project/
 │
 ├── Backend/
@@ -88,8 +89,6 @@ ai_project/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
-
 ---
 
 ## ⚙️ Installation & Setup

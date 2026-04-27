@@ -1,5 +1,5 @@
 import re
-
+# text cleaning and preprocessing for NLP tasks
 # Stopwords (common useless words)
 stopwords = ["kya", "hai", "ka", "ki", "ke", "the", "is", "are", "a", "an"]
 

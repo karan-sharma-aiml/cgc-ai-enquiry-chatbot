@@ -10,7 +10,7 @@ with open("../data/faq.json", "r", encoding="utf-8") as f:
 # Extract questions
 questions = [item["question"] for item in faq]
 
-# Load saved embeddings OR create new ones
+# Load embeddings
 question_vectors = load_embeddings()
 
 if question_vectors is None:
@@ -22,22 +22,34 @@ else:
 
 # 🔍 Search function
 def search(query, threshold=0.5):
-    # Convert user query to vector
-    query_vec = get_embedding(query)
+    try:
+        # 🧠 Convert query to vector
+        query_vec = get_embedding(query)
 
-    # Calculate similarity
-    scores = cosine_similarity([query_vec], question_vectors)[0]
+        # ❌ FIX 1: Check embedding
+        if query_vec is None:
+            return "Sorry, system error (embedding failed)"
 
-    # Get best match
-    best_index = np.argmax(scores)
-    best_score = scores[best_index]
+        # ❌ FIX 2: Check stored embeddings
+        if question_vectors is None or len(question_vectors) == 0:
+            return "Knowledge base not loaded properly"
 
-    # Debug print (optional)
-    print(f"Best score: {best_score}")
+        # 🔍 Similarity
+        scores = cosine_similarity([query_vec], question_vectors)[0]
 
-    # If similarity is too low → fallback
-    if best_score < threshold:
-        return "Sorry, mujhe samajh nahi aaya. Please thoda clear poochiye 🙏"
+        # Best match
+        best_index = int(np.argmax(scores))
+        best_score = float(scores[best_index])
 
-    # Return best answer
-    return faq[best_index]["answer"]
+        print(f"Best score: {best_score}")
+
+        # ❌ FIX 3: Threshold fallback
+        if best_score < threshold:
+            return "Sorry, mujhe samajh nahi aaya. Please thoda clear poochiye 🙏"
+
+        # ✅ Return answer safely
+        return faq[best_index].get("answer", "No answer found")
+
+    except Exception as e:
+        print("❌ SEARCH ERROR:", str(e))
+        return "Internal error in search system"

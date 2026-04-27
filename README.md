@@ -58,37 +58,40 @@ http://127.0.0.1:8001/app
 ---
 
 ## 📂 Project Structure
----
+
+```
 ai_project/
 │
 ├── Backend/
-│ ├── main.py
-│ ├── nlp.py
-│ ├── search.py
-│ ├── embedding.py
-│ ├── llm.py
-│ ├── memory.py
+│   ├── main.py
+│   ├── nlp.py
+│   ├── search.py
+│   ├── embedding.py
+│   ├── llm.py
+│   ├── memory.py
 │
 ├── Frontend/
-│ ├── index.html
-│ ├── style.css
-│ ├── script.js
-│ ├── cgc.jpg
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   ├── cgc.jpg
 │
 ├── Data/
-│ ├── faq.json
-│ ├── embeddings.pkl
+│   ├── faq.json
+│   ├── embeddings.pkl
 │
 ├── Screenshot/
-│ ├── chatbot-response-demo.png
-│ ├── fastapi-chat-endpoint.png
+│   ├── chatbot-response-demo.png
+│   ├── fastapi-chat-endpoint.png
 │
 ├── tests/
-│ ├── test_chatbot.py
+│   ├── test_chatbot.py
 │
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
+
 ---
 
 ## ⚙️ Installation & Setup

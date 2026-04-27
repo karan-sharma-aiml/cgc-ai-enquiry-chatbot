@@ -178,4 +178,5 @@ NLP
 RAG Architecture
 Full-stack development
 
-👉 making it suitable for college projects, portfolios, and real deployments 🚀
+Thankyou
+
